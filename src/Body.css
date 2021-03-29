@@ -1,0 +1,82 @@
+.body {
+  padding: 30px;
+  width: 100%;
+  height: 100vh;
+  /* Fix the overflow at the bottom of page */
+  overflow-y: overlay;
+  /* use up 80% of the space available  */
+  flex: 0.8;
+  color: white;
+  /* 0, 0, 0 is just the black and the black is saying go
+  from transparent on the of the color all the way to opaque black   */
+  background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+  background-color: rgb(91, 87, 115);
+}
+
+/* Keeps the functionality and get rid of the scrollbar */
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.body__info {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.body__shuffle {
+  font-size: 80px !important;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.body__icons {
+  display: flex;
+  align-items: center;
+}
+
+.body__icons > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+
+.body__shuffle:hover {
+  transition: 100ms transform ease-in;
+  transform: scale(1.08);
+}
+
+.body__background {
+  position: absolute;
+  top: 13vh;
+  right: 0;
+  opacity: 0.4;
+  height: 80%;
+  width: 80%;
+  background-color: black;
+}
+
+.body__songs {
+  z-index: 1;
+  margin: 20px -30px;
+}
+
+.body__info > img {
+  /* This will dymatically change the size of it based on how big or small
+  the screen is*/
+  height: 20vw;
+  margin: 0 20px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.body__infoText {
+  flex: 1;
+}
+
+.body__infoText > h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.body__infoText > p {
+  font-size: 14px;
+}

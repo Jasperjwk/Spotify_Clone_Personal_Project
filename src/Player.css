@@ -1,0 +1,10 @@
+.player {
+  /* flex goes into a row by default */
+  display: flex;
+  flex-direction: column;
+}
+
+.player__body {
+  display: flex;
+  flex-grow: 1;
+}
