@@ -1,3 +1,9 @@
+# Hosting URL: 
+https://spotify-clone-project-2e709.web.app
+
+![spotify](https://user-images.githubusercontent.com/63961200/116084889-d280d900-a6d0-11eb-81b3-7dbe8af0123b.gif)
+
+
 # TECH used in my Spotify Clone Personal Project build
 
 What's in this build
@@ -11,6 +17,15 @@ What's in this build
 6) Modern Tech
 7) React Hooks Functional (Hooks, State)
 8) Entire React Tech Stack
+
+# Steps to deploy my project using firebase
+
+1) npm install -g firebase-tools
+2) firebase init (hosting > build > y > n)
+3) npm run build
+4) firebase use "project id"
+5) firebase deploy
+6) To rerun the build, repeat step 3 and run step 5 to "firebase deploy --only hosting" (front-end) instead of "firebase deploy" 
 
 ## Available Scripts
 
